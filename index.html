@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Post</title>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <div class="postContainer">
+            <section class="headPost">
+                <img class="photo" src="https://picsum.photos/50" />
+                <div>
+                    <p class="name" >Erik Dunlop</p>
+                    <p class="city"> San francico, California</p>
+                </div>
+            </section>
+            <div class="imagePost swiper">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="https://picsum.photos/526/325" />
+                    <img class="swiper-slide" src="https://picsum.photos/525/325" />
+                    <img class="swiper-slide" src="https://picsum.photos/524/325" />
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+            <div class="reactionButtons">
+                <a class="likeButton"><i class="fas fa-heart"></i></i></a>
+                <a class="commentButton"><i class="far fa-comment"></i></a>
+                <a><i class="far fa-paper-plane"></i></a>
+            </div>
+            <div class="descriptionContainer">
+                <p class="nameDescription" >Erik Dunlop</p>
+                <p class="description" >dolor sit amet, consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et tristique proin. Mi
+                    enim ut eu cras ultrices eget et tristique proin.</p>
+            </div>
+            <div id="commentsContainer">
+                <div id="parentCommentsContainer">
+                    <div id="commentContent">
+                        <p  class="commentTitle">Comment</p>
+                        <p class="commentDescription">consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et</p>
+                    </div>
+                </div>
+            </div>
+            <section class="createComment">
+                <input id="createCommentDescription" type="text" onfocus="this.value=''"/>
+                <button id="createNewComment">Post</button>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/646e009a51.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
